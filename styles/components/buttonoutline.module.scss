@@ -1,0 +1,42 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 43px;
+    background: var(--buttonOutline);
+    border-radius: 5px;
+    border: 1px solid var(--buttonBodrer);
+    @media (max-width:1199px) {
+      padding: 13px 12px;
+    }
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+    min-height: auto !important;
+    text-align: center;
+    margin: 0 !important;
+    text-transform: capitalize;
+    color: var(--primaryMain) !important;
+    span{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+        img{
+            transition: all 0.3s ease;
+        }
+    }
+  }
+  &:hover{
+    background: var(--primaryMain);
+    p{
+        color:var(--activeWhite) !important;
+        span{
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+  }
+}

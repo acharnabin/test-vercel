@@ -1,0 +1,225 @@
+.innerTopFilter {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 45px;
+
+    .filterGroupLeft {
+        @media (max-width: 899px) {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    :global(.formGroup) {
+        &:not(:last-child) {
+            @media (max-width: 899px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 599px) {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 899px) {
+            width: 50%;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 599px) {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        :global(.MuiInputBase-root) {
+            @media (max-width: 899px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.sortdropdown {
+    :global(.MuiSelect-select) {
+        // background-image: url(/assets/images/icon-clock.svg);
+        // background-repeat: no-repeat;
+        // background-position: center left 10px;
+        // padding-left: 26px;
+        color: var(--headermenuhover);
+        display: flex;
+        align-items: center;
+
+        svg {
+            path {
+                fill: #3B82F6;
+            }
+        }
+    }
+}
+
+.cardNews {
+    padding: 20px;
+    background-color: var(--newsCardBg);
+    border: 1px solid var(--newsCardborder);
+
+    .paperHeader {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: flex-start;
+
+        h3 {
+            font-weight: 500;
+            font-size: 17px;
+            flex-basis: 70%;
+            color: var(--bannermaintxt);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 51px;
+
+            @media (max-width: 599px) {
+                flex-basis: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .newsday {
+            align-items: center;
+
+            img {
+                margin-right: 3px;
+            }
+
+            :global(.MuiTypography-caption) {
+                font-weight: 500;
+                color: var(--headermenuhover);
+            }
+        }
+    }
+
+    .openNewsLink {
+        width: 100%;
+        max-width: 190px;
+        font-weight: 500;
+        font-size: 12px;
+        color: var(--headermenuhover);
+        display: flex;
+        align-items: center;
+        margin: 14px 0;
+
+        img {
+            margin-right: 8px;
+        }
+    }
+
+    .postedBy {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--body1Color);
+    }
+}
+
+.btnGroupLeft {
+    button {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+}
+
+.btnGroupRight {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @media (max-width: 599px) {
+        justify-content: flex-start;
+    }
+
+    li {
+        width: auto;
+        padding: 0;
+    }
+}
+
+.mediaLike {
+    button {
+        padding: 0;
+        min-width: 1px;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:not(:last-child) {
+            padding-right: 10px;
+            margin-right: 10px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: rgba(78, 108, 135, 0.2);
+                height: 17px;
+                width: 1px;
+            }
+        }
+
+        img {
+            margin-right: 6px;
+        }
+
+        :global(.MuiTypography-caption) {
+            font-weight: 500;
+            font-size: 12px;
+            color: var(--inputTextColor);
+        }
+    }
+}
+
+.btnSaved {
+    margin-left: 9px;
+
+    button {
+        background-color: var(--lightButtonBg1);
+        border: 1px solid var(--saveBtnHover);
+        min-width: 95px;
+        padding: 12px 7px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: var(--lightButtonBgHover);
+        }
+
+        :global(.MuiTypography-caption) {
+            color: #3B82F6;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1;
+        }
+
+        img {
+            margin-right: 8px;
+        }
+    }
+}
+
+.cardBottomSec {
+    margin-top: 8px;
+
+    :global(.MuiGrid-container) {
+        align-items: center;
+    }
+}
+
+.newsCardWrapper {
+    padding-bottom: 40px;
+}

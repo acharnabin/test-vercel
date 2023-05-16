@@ -1,0 +1,260 @@
+.headerContainer {
+  background-color: var(--white);
+  padding: 22px 0;
+
+  .header_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .logoarea {
+      margin-right: 43.79px;
+
+      @media (max-width: 991px) {
+        margin-right: auto;
+      }
+
+      a {
+        display: inline-block;
+
+        @media (max-width: 991px) {
+          width: 130px;
+        }
+      }
+    }
+
+    .head_menu {
+      .menu_btn {
+        color: var(--headermeuColor);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 13px;
+        margin: 0 17.5px;
+        background-color: transparent;
+
+        @media (max-width: 991px) {
+          margin: 0 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        &:hover {
+          color: var(--headermenuhover);
+        }
+
+        &.active {
+          color: var(--activeLink);
+        }
+      }
+
+      @media (max-width: 1199px) {
+        display: none;
+      }
+    }
+
+    .icon_area {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1199px) {
+        .social_icon {
+          display: none !important;
+        }
+
+        .hdr_cmn_btn {
+          display: none !important;
+        }
+      }
+
+      .hdr_cmn_btn {
+        button {
+          padding: 10px 23px;
+
+          &:hover {
+            p {
+              span {
+                img {
+                  filter: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .social_icon {
+        display: flex;
+        align-items: center;
+
+        a {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid var(--headericonborder);
+          min-width: auto;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 7px;
+          background-color: transparent;
+
+          :global(.MuiTouchRipple-root) {
+            display: none;
+          }
+
+          svg {
+            font-size: 15px;
+
+            path {
+              fill: var(--headericonborder);
+            }
+          }
+        }
+      }
+
+      .mood_btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: var(--moodchange);
+        min-width: auto;
+        margin: 0 18px;
+
+        @media (max-width: 1199px) {
+          margin: 0;
+        }
+
+        svg {
+          path {
+            fill: var(--like_number);
+          }
+        }
+      }
+    }
+  }
+}
+
+.drawer_icon {
+  svg {
+    color: var(--drawerIcon);
+  }
+}
+
+.logoarea_drawer {
+  padding: 25px 0;
+
+  a {
+    display: inline-block;
+    max-width: 150px;
+  }
+}
+
+.for_drawer {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0 0 0;
+
+  .hdr_cmn_btn {
+    margin-top: 25px;
+
+    button {
+      padding: 10px 23px;
+
+      &:hover {
+        p {
+          span {
+            img {
+              filter: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--headericonborder);
+      min-width: auto;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 7px;
+      background-color: transparent;
+
+      :global(.MuiTouchRipple-root) {
+        display: none;
+      }
+
+      svg {
+        font-size: 15px;
+
+        path {
+          fill: var(--headericonborder);
+        }
+      }
+    }
+  }
+
+  .mood_btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--moodchange);
+    min-width: auto;
+    margin: 0 18px;
+  }
+}
+
+
+.head_menu {
+  li {
+    span {
+      color: var(--headermeuColor);
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 13px;
+      margin: 0 17.5px;
+
+      @media (max-width: 991px) {
+        margin: 0 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &:hover {
+        color: var(--headermenuhover);
+      }
+    }
+  }
+}
+
+.drawer_wrapper {
+  padding: 2px;
+
+  :global(.MuiDrawer-paper) {
+    background-color: var(--bodyBackground);
+  }
+}
+
+.submenuBtn {
+  padding: 0 !important;
+
+  &:hover {
+    background-color: transparent;
+  }
+}

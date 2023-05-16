@@ -1,0 +1,46 @@
+.pageFavouritesWrapper {
+    margin: 40px 0;
+    min-height: 50vh;
+
+    :global(.MuiPaper-root) {
+        padding: 50px 20px;
+        background-color: var(--newsCardBg);
+        border: 1px solid var(--newsCardborder);
+        max-width: 680px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 17px;
+        color: var(--bannermaintxt);
+    }
+
+    button {
+        background: var(--primaryMain);
+        border-radius: 5px;
+        border: 1px solid var(--primaryMain);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1;
+        color: var(--activeWhite);
+        text-transform: uppercase;
+        padding: 13px 43px;
+        margin-top: 20px;
+
+        img {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            background: var(--activeWhite);
+            color: var(--primaryMain);
+        }
+
+        @media (max-width: 360px) {
+            width: 100%;
+            padding: 13px;
+        }
+    }
+}

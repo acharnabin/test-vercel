@@ -1,0 +1,16 @@
+.relatedbutton{
+    padding:4px 12px;
+    border-radius: 5px;
+    background-color: var(--relatedbg);
+    color: var(--relatedbgcolor);
+    border: 2px solid var(--relatedbgline);
+    &:hover{
+        color:var(--relatedbg);
+        background-color: var(--relatedbgcolor);
+    }
+    :global(.MuiTypography-button){
+           font-weight: 500;
+font-size: 12px;
+    }
+ 
+  }

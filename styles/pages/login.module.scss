@@ -1,0 +1,149 @@
+
+
+.Container{
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  background-image: url();
+
+  font-family: Arial, sans-serif;
+}
+
+.formContainer{
+  border: 1px solid blue;
+  margin-top: 4rem;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0);
+
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.varLogo {
+  text-align: center;
+
+  h1 {
+      font-size: 28px;
+      color: var(--bannermaintxt);
+      margin-bottom: 10px;
+  }
+}
+
+.formContainer label{
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.formContainer CustomInput[type="text"],
+.formContainer CustomInput[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
+
+.btn {
+  width: 100%;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+
+}
+
+.btn:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+
+/*  .btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 10px;
+  min-width: 0;
+  outline: none;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  margin-top: 20px;
+  
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}  */
+
+.formContainer p{
+  margin-top: 10px;
+}
+

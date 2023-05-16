@@ -1,0 +1,71 @@
+.button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--primaryBlue);
+  color: white;
+  transition: all 0.5s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.buttonOutlined {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid var(--primaryBlue);
+  color: var(--primaryBlue);
+}
+
+.buttonText {
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: var(--primaryBlue);
+}
+
+.lightBlueButton {
+  background-color: var(--lightButtonBg1);
+  border: none;
+  min-width: 91px;
+  padding: 10px 7px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--lightButtonBgHover);
+  }
+
+  :global(.MuiTypography-caption) {
+    color: #3B82F6;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  :global(.MuiButton-startIcon) {
+    margin-left: 0;
+    margin-right: 4px;
+  }
+}
+
+.DarkButton {
+  background-color: var(--barkButtonBg);
+  border: none;
+  min-width: 108px;
+  padding: 15px 7px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--barkButtonBg);
+  }
+
+  :global(.MuiTypography-caption) {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    color: var(--barkButtontext);
+  }
+
+  :global(.MuiButton-startIcon) {
+    margin-left: 0;
+    margin-right: 4px;
+  }
+}

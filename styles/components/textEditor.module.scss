@@ -1,0 +1,39 @@
+.textTitle {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "whytemedium";
+  color: #807e7e;
+  margin-bottom: 20px;
+}
+.richTextSec {
+  padding: 0;
+  .richEditor{
+    border: 1px solid var(--inputBorder);
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 0;
+    background: var(--inputBg);
+    :global(.DraftEditor-root) {
+      height: 100px;
+    }
+    :global(.EditorToolbar__root___3_Aqz) {
+        margin: 0;
+        padding: 12px 10px;
+        background: var(--inputBg);
+        border-bottom: 1px solid var(--inputBorder);
+        border-radius: 10px 10px 0px 0px;
+    }
+    :global(.RichTextEditor__root___2QXK-) {
+      border: 2px solid #c9c9c9;
+      border-radius: 9px;
+    }
+    :global(.Button__root___1gz0c) {
+      border: 0;
+    }
+  
+  }
+  :global(.public-DraftEditor-content){
+    font-family: 'Kumbh Sans' !important;
+  }
+}
+

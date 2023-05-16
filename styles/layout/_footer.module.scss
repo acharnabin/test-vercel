@@ -1,0 +1,20 @@
+.ftr_sec {
+  .ftr_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  padding: 25px 0;
+  background: var(--ftrTheme);
+  p {
+    font-size: 14px;
+    color: var(--activeWhite);
+    a {
+      color: var(--primaryMain);
+      &:hover {
+        color: var(--ratingBgColor);
+      }
+    }
+  }
+}
